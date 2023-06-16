@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
-import BannerPage from "../components/units/banner/banner";
+import NavigationPage from "@/components/units/navigation/navigation";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>JM's Portfolio</title>
       </Head>
-      <BannerPage />
+      <NavigationPage />
     </>
   );
 }

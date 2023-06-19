@@ -38,6 +38,7 @@ export const BannerText = styled.span`
   font-size: 3.5rem;
   font-weight: bold;
   white-space: pre-wrap;
+  font-family: bannerFont;
 `;
 
 export const BannerHr = styled.hr`
@@ -49,4 +50,5 @@ export const BannerHr = styled.hr`
 export const LandingText = styled.span`
   font-size: 2rem;
   color: white;
+  font-family: bannerFont;
 `;

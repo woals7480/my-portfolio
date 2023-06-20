@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
   margin: 7rem;
+  border-bottom: 0.2rem dashed gray;
+  padding-bottom: 15rem;
 `;
 
 export const AboutWrapper = styled.div`
@@ -9,6 +11,7 @@ export const AboutWrapper = styled.div`
   border: 1px solid gray;
   margin: 0 auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
 `;
 
 export const AboutTitleWrapper = styled.div`
@@ -21,6 +24,7 @@ export const AboutTitle = styled.h1`
   font-size: 3rem;
   border-bottom: 1px solid gray;
   padding-bottom: 1rem;
+  font-family: titleFont;
 `;
 
 export const ProfileWrapper = styled.div`
@@ -49,5 +53,5 @@ export const ProfileText = styled.div`
 
 export const Text = styled.span`
   font-size: 1.5rem;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 `;

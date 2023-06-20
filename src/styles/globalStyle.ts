@@ -10,7 +10,7 @@ export const globalStyles = css`
 
   @font-face {
     font-family: "bannerFont";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2")
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961GulimM.woff2")
       format("woff2");
   }
 
@@ -24,5 +24,10 @@ export const globalStyles = css`
     font-family: "logoFont";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2")
       format("woff2");
+  }
+
+  @font-face{
+    font-family: "titleFont"
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961GulimM.woff2') format('woff2');
   }
 `;

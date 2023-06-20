@@ -18,7 +18,7 @@ export default function AboutPage() {
         </S.AboutTitleWrapper>
         <S.ProfileWrapper>
           <S.ProfileImgWrapper>
-            <S.ProfileImg src="/profile.jpg" />
+            <S.ProfileImg src="/profile.png" />
           </S.ProfileImgWrapper>
           <S.ProfileTextWrapper>
             <S.ProfileText>

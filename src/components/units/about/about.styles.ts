@@ -21,8 +21,8 @@ export const AboutTitleWrapper = styled.div`
 
 export const AboutTitle = styled.h1`
   display: inline;
-  font-size: 3rem;
-  border-bottom: 1px solid gray;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid gray;
   padding-bottom: 1rem;
   font-family: titleFont;
 `;

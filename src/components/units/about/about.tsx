@@ -1,15 +1,9 @@
-import { useRouter } from "next/router";
 import * as S from "./about.styles";
 
 import { Person, Cake, Home, Mail, School, GitHub } from "@mui/icons-material";
+import Link from "next/link";
 
 export default function AboutPage() {
-  const router = useRouter();
-
-  const onClickMyGit = () => {
-    router.push("https://github.com/woals7480");
-  };
-
   return (
     <S.Wrapper>
       <S.AboutWrapper>
@@ -41,10 +35,16 @@ export default function AboutPage() {
               <School style={{ fontSize: "2rem", color: "gray" }} />
               <S.Text>창원대학교(의류학과)</S.Text>
             </S.ProfileText>
-            <S.ProfileText style={{ cursor: "pointer" }} onClick={onClickMyGit}>
-              <GitHub style={{ fontSize: "2rem", color: "gray" }} />
-              <S.Text>Git</S.Text>
-            </S.ProfileText>
+            <Link
+              href="https://github.com/woals7480"
+              target="_blank"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <S.ProfileText style={{ cursor: "pointer" }}>
+                <GitHub style={{ fontSize: "2rem", color: "gray" }} />
+                <S.Text>Git</S.Text>
+              </S.ProfileText>
+            </Link>
           </S.ProfileTextWrapper>
         </S.ProfileWrapper>
       </S.AboutWrapper>

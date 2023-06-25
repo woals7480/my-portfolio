@@ -14,3 +14,11 @@ export const ProjectsTitle = styled.h1`
   border-bottom: 1px solid gray;
   padding-bottom: 1rem;
 `;
+
+export const ProjectWrapper = styled.div`
+  margin-top: 5rem;
+`;
+
+export const ProjectTitle = styled.h3`
+  font-size: 3rem;
+`;

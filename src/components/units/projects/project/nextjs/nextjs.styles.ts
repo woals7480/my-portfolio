@@ -3,23 +3,30 @@ import styled from "@emotion/styled";
 export const ProjectWrapper = styled.div`
   width: 90rem;
   height: 50rem;
-  margin: 5rem auto;
-  border: 0.1rem solid gray;
+  margin: 1rem auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  background-image: url("/projects/market.png");
+  background-image: url("/projects/${(props: {
+    title: string;
+    imgst: string;
+  }) => `${props.title}.${props.imgst}`}");
   background-size: cover;
   text-align: center;
   position: relative;
 `;
 
-export const ProjectBackground = styled.div`
+export const ProjectBackground = styled.div<{
+  isOver: boolean;
+  gradient: Array<string>;
+}>`
   width: 100%;
   height: 100%;
-  background: linear-gradient(#e66465, #ffa2ad);
+  background: linear-gradient(
+    ${(props) => `${props.gradient[0]},${props.gradient[1]}`}
+  );
   opacity: 0.9;
   border-radius: 1rem;
-  display: ${(props: { isOver: boolean }) => (props.isOver ? "block" : "none")};
+  display: ${(props) => (props.isOver ? "block" : "none")};
 `;
 
 export const ProjectText = styled.div`
@@ -64,14 +71,17 @@ export const Skills = styled.span`
   margin-bottom: 3rem;
 `;
 
-export const Readme = styled.button`
+export const Readme = styled.button<{
+  backColor: string;
+  fontColor?: string;
+}>`
   width: 12rem;
   height: 3rem;
   font-size: 1rem;
   border: none;
   border-radius: 0.5rem;
   font-weight: bold;
-  background-color: #e66465;
-  color: white;
+  background-color: ${(props) => props.backColor};
+  color: ${(props) => (props.fontColor ? props.fontColor : "black")};
   cursor: pointer;
 `;

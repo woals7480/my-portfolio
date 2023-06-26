@@ -5,14 +5,20 @@ import BannerPage from "../banner/banner";
 import ProjectsPage from "../projects/projects";
 import SkillsPage from "../skills/skills";
 import * as S from "./navigation.styles";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import ContactsPage from "../contacts/contacts";
 
 export default function NavigationPage() {
   const router = useRouter();
-  const NAVIGATION_MENUS = ["Home", "About", "Skills", "Projects"];
+  const NAVIGATION_MENUS = ["Home", "About", "Skills", "Projects", "Contacts"];
 
   const onClickLogo = () => {
     router.push("/");
+  };
+
+  const onClickTop = () => {
+    scroll.scrollToTop();
   };
   return (
     <>
@@ -40,6 +46,12 @@ export default function NavigationPage() {
       <div id="Projects">
         <ProjectsPage />
       </div>
+      <div id="Contacts">
+        <ContactsPage />
+      </div>
+      <S.TopButton onClick={onClickTop}>
+        <KeyboardDoubleArrowUpIcon />
+      </S.TopButton>
     </>
   );
 }

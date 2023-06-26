@@ -25,11 +25,27 @@ export const NavBar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 60%;
 `;
 
 export const NavList = styled.div`
   cursor: pointer;
   font-weight: 700;
   font-size: 1.5rem;
+  font-family: logoFont;
+`;
+
+export const TopButton = styled.button`
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: 0.3rem solid gray;
+  position: fixed;
+  top: 90vh;
+  right: 1vw;
+  cursor: pointer;
+  background-color: rgba(219, 219, 219, 0.8);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #514d4c;
 `;

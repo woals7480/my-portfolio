@@ -71,11 +71,31 @@ export const Skills = styled.span`
   margin-bottom: 3rem;
 `;
 
+export const LinkWrapper = styled.div`
+  display: flex;
+`;
+
 export const Readme = styled.button<{
   backColor: string;
   fontColor?: string;
 }>`
   width: 12rem;
+  height: 3rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  background-color: ${(props) => props.backColor};
+  color: ${(props) => (props.fontColor ? props.fontColor : "black")};
+  cursor: pointer;
+  margin-right: 1rem;
+`;
+
+export const Url = styled.button<{
+  backColor: string;
+  fontColor?: string;
+}>`
+  width: 5rem;
   height: 3rem;
   font-size: 1rem;
   border: none;

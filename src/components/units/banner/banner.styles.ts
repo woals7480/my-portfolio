@@ -15,7 +15,7 @@ export const BannerWarpper = styled.div`
   height: 70vh;
   position: relative;
   text-align: center;
-  padding: 20rem;
+  padding: 12rem;
 
   ::after {
     width: 100vw;

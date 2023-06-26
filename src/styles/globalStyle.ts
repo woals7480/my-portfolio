@@ -10,8 +10,7 @@ export const globalStyles = css`
 
   @font-face {
     font-family: "bannerFont";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961GulimM.woff2")
-      format("woff2");
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
   }
 
   @font-face {
@@ -22,8 +21,7 @@ export const globalStyles = css`
 
   @font-face {
     font-family: "logoFont";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2")
-      format("woff2");
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSJiptokki-Round.woff2') format('woff2');
   }
 
   @font-face{

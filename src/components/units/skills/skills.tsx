@@ -5,7 +5,7 @@ export default function SkillsPage() {
     <S.Wrapper>
       <S.SkillsTitle>SKILLS</S.SkillsTitle>
       <S.SkillsWrapper>
-        <S.SkillsImage src="skills/htmlcssjs.png" />
+        <S.SkillsImage src="https://woals7480.github.io/my-portfolio/skills/htmlcssjs.png" />
         <S.SkillsImage src="skills/ts.png" />
         <S.SkillsImage src="skills/react.png" />
         <S.SkillsImage src="skills/nextjs.png" />

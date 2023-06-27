@@ -6,6 +6,7 @@ export const globalStyles = css`
     padding: 0;
     box-sizing: border-box;
     font-family: normalFont;
+    font-size: 1rem;
   }
 
   @font-face {

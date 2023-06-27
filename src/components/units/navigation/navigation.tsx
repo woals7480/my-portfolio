@@ -11,7 +11,7 @@ import ContactsPage from "../contacts/contacts";
 
 export default function NavigationPage() {
   const router = useRouter();
-  const NAVIGATION_MENUS = ["Home", "About", "Skills", "Projects", "Contacts"];
+  const NAVIGATION_MENUS = ["About", "Skills", "Projects", "Contacts"];
 
   const onClickLogo = () => {
     router.push("/");
@@ -34,9 +34,7 @@ export default function NavigationPage() {
           </S.NavBar>
         </S.NavWrapper>
       </S.Wrapper>
-      <div id="Home">
-        <BannerPage />
-      </div>
+      <BannerPage />
       <div id="About">
         <AboutPage />
       </div>

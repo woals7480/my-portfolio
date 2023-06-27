@@ -5,10 +5,11 @@ export const Wrapper = styled.div`
   top: 0;
   background-color: #4d4f65;
   z-index: 999;
-  padding: 1.5rem 30rem;
+  padding: 1.5rem 20rem;
 `;
 
 export const NavWrapper = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,7 +26,7 @@ export const NavBar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 45%;
 `;
 
 export const NavList = styled.div`

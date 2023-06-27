@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 const prefix =
   process.env.NODE_ENV === "production"
-    ? "https://EngChooN.github.io/joonyoung-s-portfolio-page"
+    ? "https://woals7480.github.io/my-portfolio"
     : "";
 
 export const ProjectWrapper = styled.div`

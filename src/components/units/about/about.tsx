@@ -13,7 +13,7 @@ export default function AboutPage() {
         </S.AboutTitleWrapper>
         <S.ProfileWrapper>
           <S.ProfileImgWrapper>
-            <S.ProfileImg src={`${prefix}/my-portfolio/profile.png`} />
+            <S.ProfileImg src={`${prefix}/profile.png`} />
           </S.ProfileImgWrapper>
           <S.ProfileTextWrapper>
             <S.ProfileText>

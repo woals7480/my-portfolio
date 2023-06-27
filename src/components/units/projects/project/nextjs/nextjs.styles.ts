@@ -1,9 +1,5 @@
+import { prefix } from "@/components/commons/config/config";
 import styled from "@emotion/styled";
-
-const prefix =
-  process.env.NODE_ENV === "production"
-    ? "https://woals7480.github.io/my-portfolio"
-    : "";
 
 export const ProjectWrapper = styled.div`
   width: 90rem;

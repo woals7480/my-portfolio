@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
+import { prefix } from "@/components/commons/config/config";
 
 const cursor = keyframes`
   from{
@@ -20,7 +21,7 @@ export const BannerWarpper = styled.div`
   ::after {
     width: 100vw;
     height: 70vh;
-    background-image: url("https://woals7480.github.io/my-portfolio/banner.jpg");
+    background-image: url("${prefix}/my-portfolio/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

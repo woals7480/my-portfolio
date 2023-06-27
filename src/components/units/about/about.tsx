@@ -1,3 +1,4 @@
+import { prefix } from "@/components/commons/config/config";
 import * as S from "./about.styles";
 
 import { Person, Cake, Home, Mail, School, GitHub } from "@mui/icons-material";
@@ -12,7 +13,7 @@ export default function AboutPage() {
         </S.AboutTitleWrapper>
         <S.ProfileWrapper>
           <S.ProfileImgWrapper>
-            <S.ProfileImg src="https://woals7480.github.io/my-portfolio/profile.png" />
+            <S.ProfileImg src={`${prefix}/my-portfolio/profile.png`} />
           </S.ProfileImgWrapper>
           <S.ProfileTextWrapper>
             <S.ProfileText>

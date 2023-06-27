@@ -1,3 +1,4 @@
+import { prefix } from "@/components/commons/config/config";
 import styled from "@emotion/styled";
 
 export const ProjectWrapper = styled.div`
@@ -6,7 +7,7 @@ export const ProjectWrapper = styled.div`
   margin: 1rem auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  background-image: url("/projects/${(props: {
+  background-image: url("${prefix}/projects/${(props: {
     title: string;
     imgst: string;
   }) => `${props.title}.${props.imgst}`}");

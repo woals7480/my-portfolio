@@ -1,12 +1,17 @@
 import styled from "@emotion/styled";
 
+const prefix =
+  process.env.NODE_ENV === "production"
+    ? "https://EngChooN.github.io/joonyoung-s-portfolio-page"
+    : "";
+
 export const ProjectWrapper = styled.div`
   width: 90rem;
   height: 50rem;
   margin: 1rem auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  background-image: url("/projects/${(props: {
+  background-image: url("${prefix}/projects/${(props: {
     title: string;
     imgst: string;
   }) => `${props.title}.${props.imgst}`}");

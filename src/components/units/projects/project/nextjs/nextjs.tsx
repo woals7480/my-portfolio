@@ -79,6 +79,61 @@ export default function NextjsPage() {
           <S.ProjectWrapper
             onMouseOver={onMouseOverProject}
             onMouseOut={onMouseOutProject}
+            title={"aws_docker"}
+            imgst={"png"}
+          >
+            <S.ProjectBackground
+              isOver={isOver}
+              gradient={["#999", "#fff"]}
+            ></S.ProjectBackground>
+            <S.ProjectText isOver={isOver}>
+              <S.ProjectTitle>게시판</S.ProjectTitle>
+              <S.ProjectDetail>
+                <S.DetailText>
+                  firebase 데이터베이스를 이용한 간단한 게시판페이지이다.
+                  <br />
+                  게시판목록, 게시판등록, 상세게시판 페이지로 구성되어있다.
+                </S.DetailText>
+                <S.KeyFeatures>
+                  <CheckIcon />
+                  주요기능
+                  <br />
+                  게시판 등록,게시판 보기
+                </S.KeyFeatures>
+                <S.Skills>
+                  <CheckIcon />
+                  사용기술
+                  <br />
+                  Next.js, AWS, Docker
+                </S.Skills>
+                <S.LinkWrapper>
+                  <Link
+                    href="https://github.com/woals7480/aws_docker"
+                    target="_blank"
+                    style={{ display: "flex", textDecoration: "none" }}
+                  >
+                    <S.Readme backColor={"#4d4f65"} fontColor={"white"}>
+                      ▶ 자세히보기(README)
+                    </S.Readme>
+                  </Link>
+                  <Link
+                    href="https://codecamp-jjm.shop/"
+                    target="_blank"
+                    style={{ display: "flex", textDecoration: "none" }}
+                  >
+                    <S.Url backColor={"#4d4f65"} fontColor={"white"}>
+                      ▶ URL
+                    </S.Url>
+                  </Link>
+                </S.LinkWrapper>
+              </S.ProjectDetail>
+            </S.ProjectText>
+          </S.ProjectWrapper>
+        </div>
+        <div>
+          <S.ProjectWrapper
+            onMouseOver={onMouseOverProject}
+            onMouseOut={onMouseOutProject}
             title={"portfolio"}
             imgst={"png"}
           >

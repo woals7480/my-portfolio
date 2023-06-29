@@ -6,12 +6,14 @@ import ProjectsPage from "../projects/projects";
 import SkillsPage from "../skills/skills";
 import * as S from "./navigation.styles";
 import { Link, animateScroll as scroll } from "react-scroll";
-import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import { KeyboardDoubleArrowUp, Menu } from "@mui/icons-material";
 import ContactsPage from "../contacts/contacts";
+import { useState } from "react";
 
 export default function NavigationPage() {
   const router = useRouter();
   const NAVIGATION_MENUS = ["About", "Skills", "Projects", "Contacts"];
+  const [view, setView] = useState(false);
 
   const onClickLogo = () => {
     router.push("/");
@@ -19,6 +21,10 @@ export default function NavigationPage() {
 
   const onClickTop = () => {
     scroll.scrollToTop();
+  };
+
+  const onClickNav = () => {
+    setView((prev) => !prev);
   };
   return (
     <>
@@ -32,6 +38,21 @@ export default function NavigationPage() {
               </Link>
             ))}
           </S.NavBar>
+          <S.MobileNav>
+            <Menu
+              style={{ fontSize: "3rem", cursor: "pointer" }}
+              onClick={onClickNav}
+            />
+            {view && (
+              <S.MobileNavListUl>
+                {NAVIGATION_MENUS.map((el) => (
+                  <Link key={el} to={el} spy={true} smooth={true}>
+                    <S.MobileNavListLi>{el}</S.MobileNavListLi>
+                  </Link>
+                ))}
+              </S.MobileNavListUl>
+            )}
+          </S.MobileNav>
         </S.NavWrapper>
       </S.Wrapper>
       <BannerPage />
@@ -48,7 +69,7 @@ export default function NavigationPage() {
         <ContactsPage />
       </div>
       <S.TopButton onClick={onClickTop}>
-        <KeyboardDoubleArrowUpIcon />
+        <KeyboardDoubleArrowUp />
       </S.TopButton>
     </>
   );

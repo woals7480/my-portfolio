@@ -4,7 +4,7 @@ import { prefix } from "@/components/commons/config/config";
 
 const cursor = keyframes`
   from{
-    border-right: 2px solid white;
+    border-right: 2px solid transparent;
   }
   to{
     border-right: 2px solid black;
@@ -13,19 +13,20 @@ const cursor = keyframes`
 
 export const BannerWarpper = styled.div`
   width: 100vw;
-  height: 70vh;
+  height: 40rem;
   position: relative;
   text-align: center;
   padding: 12rem;
 
   ::after {
     width: 100vw;
-    height: 70vh;
+    height: 40rem;
     background-image: url("${prefix}/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
+    background-position: center;
     top: 0;
     left: 0;
     content: "";
@@ -35,7 +36,7 @@ export const BannerWarpper = styled.div`
 `;
 
 export const BannerText = styled.span`
-  animation: ${cursor} 1s ease-in-out 0ms 2;
+  animation: ${cursor} 0.5s ease-in-out 0ms 5;
   font-size: 3.5rem;
   font-weight: bold;
   white-space: pre-wrap;

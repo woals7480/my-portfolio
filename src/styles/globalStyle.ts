@@ -14,10 +14,10 @@ export const globalStyles = css`
 
   html{
     ${mq[1]}{
-      font-size: 12px;
+      font-size: 10px;
     }
     ${mq[0]}{
-      font-size: 10px;
+      font-size: 8px;
     }
   }
 

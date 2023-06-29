@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 `;
 
 export const SkillsWrapper = styled.div`
-  width: 90rem;
+  width: 85%;
   margin: 5rem auto;
   padding: 2rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);

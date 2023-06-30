@@ -1,4 +1,5 @@
 import { prefix } from "@/components/commons/config/config";
+import { mq } from "@/styles/globalStyle";
 import styled from "@emotion/styled";
 
 export const ProjectWrapper = styled.div<{
@@ -6,7 +7,7 @@ export const ProjectWrapper = styled.div<{
   imgst: string;
   webapp: string;
 }>`
-  width: 90rem;
+  width: 85%;
   height: 50rem;
   margin: 1rem auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -18,6 +19,10 @@ export const ProjectWrapper = styled.div<{
   background-position-x: center;
   text-align: center;
   position: relative;
+
+  ${mq[0]} {
+    width: 95%;
+  }
 `;
 
 export const ProjectBackground = styled.div<{
@@ -42,24 +47,42 @@ export const ProjectText = styled.div`
   left: 50%;
   transform: translateX(-50%);
   flex-direction: column;
+  width: 70%;
+
+  ${mq[1]} {
+    top: 5rem;
+  }
 `;
 
 export const ProjectTitle = styled.h2`
   z-index: 2;
   font-family: titleFont;
   font-size: 3rem;
+
+  ${mq[1]} {
+    font-size: 2rem;
+  }
 `;
 
 export const ProjectDetail = styled.div`
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
+
+  ${mq[1]} {
+    margin-top: 2rem;
+  }
 `;
 
 export const DetailText = styled.span`
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin-bottom: 3rem;
+
+  ${mq[1]} {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const KeyFeatures = styled.span`
@@ -67,6 +90,11 @@ export const KeyFeatures = styled.span`
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin-bottom: 3rem;
+
+  ${mq[1]} {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Skills = styled.span`
@@ -74,6 +102,11 @@ export const Skills = styled.span`
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin-bottom: 3rem;
+
+  ${mq[1]} {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const LinkWrapper = styled.div`
@@ -84,8 +117,7 @@ export const Readme = styled.button<{
   backColor: string;
   fontColor?: string;
 }>`
-  width: 12rem;
-  height: 3rem;
+  padding: 1rem;
   font-size: 1rem;
   border: none;
   border-radius: 0.5rem;
@@ -100,8 +132,7 @@ export const Url = styled.button<{
   backColor: string;
   fontColor?: string;
 }>`
-  width: 5rem;
-  height: 3rem;
+  padding: 1rem;
   font-size: 1rem;
   border: none;
   border-radius: 0.5rem;

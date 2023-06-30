@@ -17,14 +17,6 @@ export const Wrapper = styled.div`
   z-index: 999;
   padding: 1.5rem 0;
   background-color: #4d4f65;
-
-  ${mq[1]} {
-    background-color: green;
-  }
-
-  ${mq[0]} {
-    background-color: #4d4f65;
-  }
 `;
 
 export const NavWrapper = styled.div`

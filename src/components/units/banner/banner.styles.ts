@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
 import { prefix } from "@/components/commons/config/config";
+import { mq } from "@/styles/globalStyle";
 
 const cursor = keyframes`
   from{
@@ -41,6 +42,10 @@ export const BannerText = styled.span`
   font-weight: bold;
   white-space: pre-wrap;
   font-family: bannerFont;
+
+  ${mq[0]} {
+    font-size: 3rem;
+  }
 `;
 
 export const BannerHr = styled.hr`
@@ -53,4 +58,8 @@ export const LandingText = styled.span`
   font-size: 2rem;
   color: white;
   font-family: bannerFont;
+
+  ${mq[0]} {
+    font-size: 1.8rem;
+  }
 `;

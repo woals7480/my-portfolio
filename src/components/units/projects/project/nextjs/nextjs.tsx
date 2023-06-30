@@ -145,7 +145,7 @@ export default function NextjsPage() {
               <S.ProjectTitle>JM's Portfolio</S.ProjectTitle>
               <S.ProjectDetail>
                 <S.DetailText>
-                  Next.js를 기반으로 한 포트폴리오이다.
+                  Next.js를 기반으로 한 반응형 웹 포트폴리오이다.
                 </S.DetailText>
                 <S.KeyFeatures></S.KeyFeatures>
                 <S.Skills>

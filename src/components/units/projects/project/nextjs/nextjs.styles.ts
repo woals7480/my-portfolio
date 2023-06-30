@@ -136,8 +136,4 @@ export const Url = styled.button<{
   color: ${(props) => (props.fontColor ? props.fontColor : "black")};
   cursor: pointer;
   padding: 1rem;
-
-  ${mq[0]} {
-    font-size: 0.2rem;
-  }
 `;
